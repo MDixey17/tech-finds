@@ -7,6 +7,10 @@ export const ProductWrapper = styled.div`
     display: flex;
     flex-direction: row;
     justify-items: center;
+    &:hover {
+        color: #006B94;
+        background: #bbbbbb;
+    }
 `;
 
 export const ProductSection = styled.div`
@@ -23,6 +27,7 @@ export const ProductContainer = styled.a`
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
     color: #0a1115;
+    
 `;
 
 export const ProductImage = styled.img`
