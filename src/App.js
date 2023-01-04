@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import './App.css';
 import TechProducts from "./pages/TechProducts";
 import Navbar from "./components/Navbar";
@@ -31,7 +31,7 @@ function App() {
 
   return (
     <>
-      <HashRouter basename="/tech-finds">
+      <BrowserRouter basename="/tech-finds">
           <Navbar/>
           <Routes>
             <Route exact path="/" element={<Home/>}/>
@@ -41,7 +41,7 @@ function App() {
             <Route path="*" element={<Navigate to="/"/>}/>
           </Routes>
           <Footer/>
-      </HashRouter>
+      </BrowserRouter>
     </>
   )
 }
