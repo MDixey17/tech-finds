@@ -9,7 +9,7 @@ const Navbar = () => {
 
     const techPath = "/tech";
     const gamingPath = "/gaming";
-    const decorPath = "/decor";
+    const decorPath = "/office";
 
     const techResPath = useResolvedPath(techPath);
     const gamingResPath = useResolvedPath(gamingPath);
@@ -29,7 +29,7 @@ const Navbar = () => {
                     <NavLinkWrapper>
                         <NavbarLink to="/tech" className={techMatch ? "active" : ""}>Tech</NavbarLink>
                         <NavbarLink to="/gaming" className={gamingMatch ? "active" : ""}>Gaming</NavbarLink>
-                        <NavbarLink to="/decor" className={decorMatch ? "active" : ""}>Decor</NavbarLink>
+                        <NavbarLink to="/office" className={decorMatch ? "active" : ""}>Office</NavbarLink>
                     </NavLinkWrapper>
                 </NavCenterContainer>
                 <NavRightContainer>
@@ -55,7 +55,7 @@ const Navbar = () => {
                 <NavbarOuter>
                     <NavbarLinkMobile to="/tech" className={techMatch ? "active" : ""}>Tech</NavbarLinkMobile>
                     <NavbarLinkMobile to="/gaming" className={gamingMatch ? "active" : ""}>Gaming</NavbarLinkMobile>
-                    <NavbarLinkMobile to="/decor" className={decorMatch ? "active" : ""}>Decor</NavbarLinkMobile>
+                    <NavbarLinkMobile to="/office" className={decorMatch ? "active" : ""}>Office</NavbarLinkMobile>
                     <NavbarMobileSocialLink href="https://www.instagram.com/mdixey17/">
                         <FontAwesomeIcon icon={faInstagram} size="2x" color="#fbad50"/>
                     </NavbarMobileSocialLink>

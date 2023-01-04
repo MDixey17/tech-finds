@@ -7,10 +7,10 @@ const DecorProducts = ({products}) => {
     return (
         <ContentWrapper>
             <ContentSection>
-                <ContentHeader>Decor Finds</ContentHeader>
+                <ContentHeader>Home & Office Finds</ContentHeader>
                 <ContentText>
                     This page contains products that I found to improve the aesthetic of 
-                    my home. Click the cards to order them today!
+                    my home and office. Click the cards to order them today!
                     <br/>
                     <br/>
                     The links are <b>affiliate links</b>, meaning that I get 
