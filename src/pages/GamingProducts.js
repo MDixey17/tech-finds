@@ -1,6 +1,7 @@
 import React from "react";
 import { ContentHeader, ContentSection, ContentText, ContentWrapper } from "../components/Content.style";
-import { ProductContainer, ProductImage, ProductMobileSection, ProductMobileWrapper, ProductName, ProductSection, ProductWrapper } from "./Products.style";
+import SearchBar from "../components/Searchbar";
+import { ProductMobileSection, ProductSection } from "./Products.style";
 
 const GamingProducts = ({products}) => {
     return (
@@ -17,24 +18,10 @@ const GamingProducts = ({products}) => {
                     Thank you for supporting me!
                 </ContentText>
                 <ProductSection>
-                    {products.map((p) => (
-                        <ProductContainer href={p.aLink}>
-                            <ProductWrapper>
-                                <ProductImage src={p.pImage}/>
-                                <ProductName>{p.pName}</ProductName>
-                            </ProductWrapper>
-                        </ProductContainer>
-                    ))}
+                    <SearchBar productList={products}/>
                 </ProductSection>
                 <ProductMobileSection>
-                    {products.map((p) => (
-                        <ProductContainer href={p.aLink}>
-                            <ProductMobileWrapper>
-                                <ProductImage src={p.pImage}/>
-                                <ProductName>{p.pName}</ProductName>
-                            </ProductMobileWrapper>
-                        </ProductContainer>
-                    ))}
+                    <SearchBar productList={products}/>
                 </ProductMobileSection>
             </ContentSection>
         </ContentWrapper>

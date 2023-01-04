@@ -11,6 +11,16 @@ export const ProductWrapper = styled.div`
         color: #006B94;
         background: #bbbbbb;
     }
+
+    @media (max-width: 706px) {
+        width: 250px;
+        border-radius: 12px;
+        background: #f9f9f9;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
 `;
 
 export const ProductSection = styled.div`
@@ -24,6 +34,9 @@ export const ProductSection = styled.div`
 `;
 
 export const ProductContainer = styled.a`
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 16px;
     text-decoration: none;
     border-radius: 12px;
@@ -65,11 +78,5 @@ export const ProductMobileSection = styled.div`
 `;
 
 export const ProductMobileWrapper = styled.div`
-    width: 250px;
-    border-radius: 12px;
-    background: #f9f9f9;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
+    
 `;
