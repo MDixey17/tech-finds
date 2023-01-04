@@ -31,6 +31,7 @@ export const NavCenterContainer = styled.div`
     flex: 34%;
     display: flex;
     align-items: center;
+    justify-content: center;
     padding-left: 24px;
     padding-right: 24px;
 `;

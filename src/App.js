@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import GamingProducts from "./pages/GamingProducts";
 import DecorProducts from "./pages/DecorProducts";
+import Home from "./pages/Home";
 
 function App() {
   // Use this whenever adding new products: { aLink: '', pImage: '', pName: '' },
@@ -33,10 +34,11 @@ function App() {
       <BrowserRouter basename="/tech-finds">
           <Navbar/>
           <Routes>
-            <Route exact path="/tech" element={<TechProducts products={techProds}/>}/>
+            <Route exact path="/" element={<Home/>}/>
+            <Route path="/tech" element={<TechProducts products={techProds}/>}/>
             <Route path="/gaming" element={<GamingProducts products={gamingProds}/>}/>
             <Route path="/office" element={<DecorProducts products={decorProds}/>}/>
-            <Route path="*" element={<Navigate to="/tech"/>}/>
+            <Route path="*" element={<Navigate to="/"/>}/>
           </Routes>
           <Footer/>
       </BrowserRouter>
