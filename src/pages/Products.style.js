@@ -12,6 +12,8 @@ export const ProductWrapper = styled.div`
 export const ProductSection = styled.div`
     justify-content: space-evenly;
     display: flex;
+    flex-direction: column;
+    align-items: center;
 `;
 
 export const ProductContainer = styled.a`
@@ -28,7 +30,7 @@ export const ProductImage = styled.img`
     display: flex;
     align-items: center;
     max-width: 128px;
-    height: auto;
+    height: 128px;
     border-radius: 12px;
     margin: 4px;
 `;
