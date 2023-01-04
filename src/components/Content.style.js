@@ -19,6 +19,9 @@ export const ContentHeader = styled.h1`
     color: #f9f9f9;
     margin: 0;
     padding: 0;
+    @media (max-width: 706px) {
+        font-size: 32px;
+    }
 `;
 
 export const ContentText = styled.p`
@@ -27,4 +30,7 @@ export const ContentText = styled.p`
     font-size: 24px;
     color: #dee0e1;
     margin: 16px;
+    @media (max-width: 706px) {
+        font-size: 16px;
+    }
 `;

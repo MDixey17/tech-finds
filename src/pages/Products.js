@@ -1,6 +1,6 @@
 import React from "react";
 import { ContentHeader, ContentSection, ContentText, ContentWrapper } from "../components/Content.style";
-import { ProductContainer, ProductImage, ProductName, ProductSection, ProductWrapper } from "./Products.style";
+import { ProductContainer, ProductImage, ProductMobileSection, ProductMobileWrapper, ProductName, ProductSection, ProductWrapper } from "./Products.style";
 
 const Products = ({products}) => {
     return (
@@ -27,6 +27,16 @@ const Products = ({products}) => {
                         </ProductContainer>
                     ))}
                 </ProductSection>
+                <ProductMobileSection>
+                    {products.map((p) => (
+                        <ProductContainer href={p.aLink}>
+                            <ProductMobileWrapper>
+                                <ProductImage src={p.pImage}/>
+                                <ProductName>{p.pName}</ProductName>
+                            </ProductMobileWrapper>
+                        </ProductContainer>
+                    ))}
+                </ProductMobileSection>
             </ContentSection>
         </ContentWrapper>
     )

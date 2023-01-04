@@ -18,6 +18,9 @@ export const ProductSection = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media (max-width: 706px) {
+        display: none;
+    }
 `;
 
 export const ProductContainer = styled.a`
@@ -47,12 +50,26 @@ export const ProductName = styled.h3`
     font-weight: 400;
     align-items: center;
     margin-left: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    @media (max-width: 706px) {
+        font-size: 18px;
+        margin: 8px;
+    }
 `;
 
-export const ProductMobileWrapper = styled.div``;
+export const ProductMobileSection = styled.div`
+    display: grid;
+    @media (min-width: 706px) {
+        display: none;
+    }
+`;
 
-export const ProductMobileContainer = styled.div``;
-
-export const ProductMobileImage = styled.img``;
-
-export const ProductMobileName = styled.h3``;
+export const ProductMobileWrapper = styled.div`
+    width: 250px;
+    border-radius: 12px;
+    background: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+`;
