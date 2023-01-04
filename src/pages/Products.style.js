@@ -56,7 +56,7 @@ export const ProductImage = styled.img`
     margin: 4px;
     @media (max-width: 706px) {
         max-width: 64px;
-        height: 64px;
+        height: auto;
     }
 `;
 
