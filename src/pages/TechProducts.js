@@ -1,6 +1,23 @@
-import React from "react";
+import React, {useState} from "react";
 import { ContentHeader, ContentSection, ContentText, ContentWrapper } from "../components/Content.style";
-import { ProductContainer, ProductImage, ProductMobileSection, ProductMobileWrapper, ProductName, ProductSection, ProductWrapper } from "./Products.style";
+import ProductList from "../components/ProductList";
+import { SearchbarInput, SearchbarWrapper } from "../components/Searchbar.style";
+import { ProductContainer, ProductImage, ProductMobileSection, ProductMobileWrapper, ProductName, ProductSection} from "./Products.style";
+
+const SearchBar = ({productList}) => {
+    const [searchInput, setSearchInput] = useState("");
+
+    const inputHandle = (e) => {
+        setSearchInput(e.target.value.toLowerCase());
+    };
+
+    return (
+        <SearchbarWrapper>
+            <SearchbarInput type="search" placeholder="Search products" onChange={inputHandle} value={searchInput}/>
+            <ProductList inputText={searchInput} proList={productList}/>
+        </SearchbarWrapper>
+    )
+}
 
 const TechProducts = ({products}) => {
     return (
@@ -18,14 +35,7 @@ const TechProducts = ({products}) => {
                     Thank you for supporting me!
                 </ContentText>
                 <ProductSection>
-                    {products.map((p) => (
-                        <ProductContainer href={p.aLink}>
-                            <ProductWrapper>
-                                <ProductImage src={p.pImage}/>
-                                <ProductName>{p.pName}</ProductName>
-                            </ProductWrapper>
-                        </ProductContainer>
-                    ))}
+                    <SearchBar productList={products}/>
                 </ProductSection>
                 <ProductMobileSection>
                     {products.map((p) => (
