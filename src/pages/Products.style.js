@@ -54,6 +54,10 @@ export const ProductImage = styled.img`
     height: 128px;
     border-radius: 12px;
     margin: 4px;
+    @media (max-width: 706px) {
+        max-width: 64px;
+        height: 64px;
+    }
 `;
 
 export const ProductName = styled.h3`
