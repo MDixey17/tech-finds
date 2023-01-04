@@ -1,15 +1,25 @@
 import React from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import './App.css';
-import Products from "./pages/Products";
+import TechProducts from "./pages/TechProducts";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import GamingProducts from "./pages/GamingProducts";
+import DecorProducts from "./pages/DecorProducts";
 
 function App() {
   // Use this whenever adding new products: { aLink: '', pImage: '', pName: ''},
-  const ps = [
+  const techProds = [
     { aLink: 'https://amzn.to/3X2mDER', pImage: 'https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/618E33M4mVL._AC_SX425_.jpg', pName: 'MOUNTUP Dual Monitor Stand - Freestanding & Height Adjustable Desk Mount'},
     { aLink: 'https://amzn.to/3Bl7tC6', pImage: 'https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/711QqQZk+PL._SX425_.jpg', pName: 'EppieBasic LED Desk Lamp'},
+  ];
+
+  const gamingProds = [
+    {}
+  ];
+
+  const decorProds = [
+    {}
   ];
 
   return (
@@ -17,8 +27,10 @@ function App() {
       <BrowserRouter basename="/tech-finds">
           <Navbar/>
           <Routes>
-            <Route exact path="/" element={<Products products={ps}/>}/>
-            <Route path="*" element={<Navigate to="/"/>}/>
+            <Route exact path="/tech" element={<TechProducts products={techProds}/>}/>
+            <Route path="/gaming" element={<GamingProducts products={gamingProds}/>}/>
+            <Route path="/decor" element={<DecorProducts products={decorProds}/>}/>
+            <Route path="*" element={<Navigate to="/tech"/>}/>
           </Routes>
           <Footer/>
       </BrowserRouter>

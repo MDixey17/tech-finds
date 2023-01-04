@@ -2,15 +2,14 @@ import React from "react";
 import { ContentHeader, ContentSection, ContentText, ContentWrapper } from "../components/Content.style";
 import { ProductContainer, ProductImage, ProductMobileSection, ProductMobileWrapper, ProductName, ProductSection, ProductWrapper } from "./Products.style";
 
-const Products = ({products}) => {
+const GamingProducts = ({products}) => {
     return (
         <ContentWrapper>
             <ContentSection>
-                <ContentHeader>My Top Tech Finds</ContentHeader>
+                <ContentHeader>Gaming Finds</ContentHeader>
                 <ContentText>
-                    Listed below are my top tech finds from online shopping. 
-                    Each card is linked to take you directly to each product page 
-                    where you can purchase if you so choose.
+                    These are products related to gaming that I found to enhance my setup 
+                    and experience when I play. Click the cards to travel to the product's page!
                     <br/>
                     <br/>
                     The links are <b>affiliate links</b>, meaning that I get 
@@ -40,6 +39,6 @@ const Products = ({products}) => {
             </ContentSection>
         </ContentWrapper>
     )
-}
+};
 
-export default Products;
+export default GamingProducts;
