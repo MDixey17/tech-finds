@@ -50,13 +50,13 @@ export const ProductImage = styled.img`
     flex: 30%;
     display: flex;
     align-items: center;
-    max-width: 128px;
-    height: 128px;
+    width: 1%;
+    height: 1%;
     border-radius: 12px;
     margin: 4px;
     @media (max-width: 706px) {
-        max-width: 234px;
-        height: 96px;
+        width: 50%;
+        height: 50%;
     }
 `;
 
