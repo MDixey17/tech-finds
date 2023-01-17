@@ -16,6 +16,7 @@ function App() {
     { aLink: 'https://amzn.to/3hmafk9', pImage: 'https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/71oPdIcALXL._AC_SX679_.jpg', pName: 'HUANUO Dual Monitor Stand' },
     { aLink: 'https://amzn.to/3uQMRyh', pImage: 'https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/61mCmjW5RiL.__AC_SX300_SY300_QL70_FMwebp_.jpg', pName: 'JoyReken 4-Port USB 3.0 Hub' },
     { aLink: 'https://amzn.to/3UGOauc', pImage: 'https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/71AsjjEAwqL._AC_SX425_.jpg', pName: 'Elgato Stream Deck MK.2' },
+    { aLink: 'https://amzn.to/3GBVrGt', pImage: 'https://m.media-amazon.com/images/I/51lofKiXPYL.__AC_SX300_SY300_QL70_FMwebp_.jpg', pName: '7 in 1 Computer and Earphone Cleaning Kit' },
   ];
 
   const gamingProds = [
